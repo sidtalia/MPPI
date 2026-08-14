@@ -1,0 +1,14 @@
+# Goal-seeking example cost (``mppi.Costs.SimpleCarCost``)
+goal_w: 1.0
+speed_w: 0.0
+roll_w: 100.0
+stop_w: 0.0
+lethal_w: 0.0
+speed_target: 10.0
+critical_SA: 1.15
+critical_RI: 1.0
+car_bb_width: 2.0
+car_bb_length: 3.0
+critical_vert_acc: 3.5
+critical_vert_spd: 0.15
+heading_w: 0.0

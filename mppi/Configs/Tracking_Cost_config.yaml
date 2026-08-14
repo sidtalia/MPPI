@@ -1,0 +1,13 @@
+# Path-tracking example cost (``mppi.Costs.TrackingCost``)
+# Same knobs as hound_nav Cost_config for CUDA trackingCostCUDA.
+pos_w: 1.0
+speed_w: 0.1
+heading_w: 0.1
+scaling_factor: 1.0
+speed_target: 10.0
+critical_RI: 0.8
+critical_vert_acc: 4.0
+roll_ditch_w: 50.0
+lethal_w: 50.0
+car_bb_length: 2.6
+car_bb_width: 1.6
