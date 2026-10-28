@@ -75,6 +75,8 @@ class MPPI(torch.nn.Module):
         cost_total = torch.nan_to_num(
             self.Costs.forward(states, controls) + perturbation_cost, nan=1000.0
         )
+        # Rollout states stay on Dynamics.states. Kept for the debug viz only.
+        self.last_cost = cost_total.detach()
 
         controls, self.U = self.Sampling.update_control(cost_total, self.U, _state)
         return controls
